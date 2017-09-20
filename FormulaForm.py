@@ -1,5 +1,6 @@
 from tkinter import *
 from sympy import *
+import os
 
 class Window(Frame):
   
@@ -62,6 +63,11 @@ class Window(Frame):
 
 root = Tk()
 root.title('二元一次方程求係數')
-root.geometry("420x150")
+
+if os.name == 'mac' :
+    root.geometry("600x170")
+elif os.name == 'nt' :
+    root.geometry("420x150")
+
 Window(root)
 root.mainloop()
