@@ -7,8 +7,11 @@ An application to solve simple simultaneous equations.
 
 ## How to use ?
 
-1. Make sure your python environment has been installed with packages:[SymPy](http://www.sympy.org/en/index.html) & [tkinter](https://docs.python.org/2/library/tkinter.html).
-2. You can use command line to run! Just find where this python file is , and type `python FormulaForm.py`.  
+1. Make sure your python environment has been installed with packages : [SymPy](http://www.sympy.org/en/index.html) & [tkinter](https://docs.python.org/2/library/tkinter.html).
+2. You can use command line to run ! 
+  + Run your python environment .
+  + Use cd [`FormulaForm.py`'s folder path] 
+  + Type `python FormulaForm.py` & run .  
 
 ## Library or API Reference
 * [SymPy](http://www.sympy.org/en/index.html)
