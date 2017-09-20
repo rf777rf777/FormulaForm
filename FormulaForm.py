@@ -8,8 +8,6 @@ class Window(Frame):
         self.master = master
         self.grid()
         self.createWidgets()
-        #self.click()
-        #self.calculate()
 
     def createWidgets(self):
         self.label1 = Label(self,text = 'y = ax + b')
@@ -50,9 +48,6 @@ class Window(Frame):
     def click(self):
         string_formula1 = '({})*a+b-({})'.format(self.inputField1.get(),self.inputField2.get())
         string_formula2 = '({})*a+b-({})'.format(self.inputField3.get(),self.inputField4.get())
-        
-        #print(string_H)
-        #print(self.calculate(string_Q))
 
         self.outputField.delete(0,END)
         string_Error = "發生錯誤，請檢查輸入式！"
@@ -61,10 +56,7 @@ class Window(Frame):
         except:
             self.outputField.insert(0,string_Error)
 
-        print(self.calculate(string_formula1,string_formula2))
-
     def calculate(self,formula1,formula2):
-        #Symbol('x')
         return solve([formula1,formula2],['a','b'])
         
 
