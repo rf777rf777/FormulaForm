@@ -10,7 +10,7 @@ An application to solve simple simultaneous equations.
 
 1. Make sure your python environment has been installed with packages : [SymPy](http://www.sympy.org/en/index.html) & [tkinter](https://docs.python.org/2/library/tkinter.html).
 
-2. Download this pythonFile.
+2. Download/Clone this project or just copy the code in the python file (`FormulaForm.py`).
 
 3. You can use command line to run ! 
   + Run your python environment.
