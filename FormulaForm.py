@@ -60,14 +60,17 @@ class Window(Frame):
     def calculate(self,formula1,formula2):
         return solve([formula1,formula2],['a','b'])
         
+def main():
+	root = Tk()
+	root.title('二元一次方程求係數')
 
-root = Tk()
-root.title('二元一次方程求係數')
+	if os.name == 'mac' :
+	    root.geometry("600x170")
+	elif os.name == 'nt' :
+	    root.geometry("420x150")
 
-if os.name == 'mac' :
-    root.geometry("600x170")
-elif os.name == 'nt' :
-    root.geometry("420x150")
+	Window(root)
+	root.mainloop()
 
-Window(root)
-root.mainloop()
+if __name__ == '__main__':
+    main()
